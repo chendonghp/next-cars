@@ -1,7 +1,7 @@
 import { useRouter } from "next/router";
 import { useEffect } from "react";
 import useAuth from "../../hooks/useAuth";
-const logout = () => {
+const Logout = () => {
   const { setUser } = useAuth();
   const removeCookie = async () => {
     const res = await fetch("/api/logout", {
@@ -17,4 +17,4 @@ const logout = () => {
   }, []);
   return <></>;
 };
-export default logout;
+export default Logout;

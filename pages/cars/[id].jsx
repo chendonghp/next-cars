@@ -23,7 +23,7 @@ const CarById = ({ car }) => {
         {car.brand} - {car.make}
       </h1>
       <div className=" bg-white p-5 shadow-md rounded-lg">
-        <Image src={car.picture} width={700} height={400} />
+        <Image src={car.picture} alt="car" width={700} height={400} />
       </div>
       <div className=" text-gray-500 m-5">
         {`This fine car was manufactured in ${car.year}, it made just ${car.km}km and it sports a ${car.cm3} cm3 engine.`}
